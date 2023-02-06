@@ -1,0 +1,46 @@
+#qna{
+    display: none; 
+}
+
+.qBox{
+    background-color: whitesmoke; 
+    text-align: center; 
+    border-radius: 20px;
+    font-size: 30px;
+    width: 80%; 
+
+}
+
+.answerList{
+    background-color: whitesmoke; 
+    border-radius: 20px;
+    /*한줄에 한개만 버튼이 보여줌*/
+    display: block;
+    width: 80%; 
+    border: 0px;
+    font-size:20px;
+
+}
+
+.answerList:hover, .answerList:focus {
+    background-color: pink;
+    color: whitesmoke; 
+}
+
+.status{
+    height:20px;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.statusBar {
+    height: 100%;
+    border-radius: 20px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a9e4f7+0,0fb4e7+100;Ble+3D+%235 */
+    background: #a9e4f7; /* Old browsers */
+    background: -moz-linear-gradient(top, #a9e4f7 0%, #0fb4e7 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a9e4f7 0%,#0fb4e7 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a9e4f7 0%,#0fb4e7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=0 ); /* IE6-9 */
+}
