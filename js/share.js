@@ -1,6 +1,5 @@
-
 const url = 'https://5lovinglanguages-kr.netlify.app/';
-const name = '5가지 사랑의언어';
+var name = Buffer.from('5가지 사랑의언어', 'utf-8').toString();
 
 function setShare() {
     var resultImg = document.querySelector('#resultImg');
