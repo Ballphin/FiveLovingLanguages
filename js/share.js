@@ -25,7 +25,7 @@ function setShare() {
 
         buttons: [
             {
-                title: shaa,
+                title: 'Share',
                 link: {
                     mobileWebUrl: shareURL,
                     webUrl: shareURL,
