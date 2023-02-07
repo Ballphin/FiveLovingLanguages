@@ -39,87 +39,114 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
 
+    <!--구글 파이 그래프-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
 
-</head>
+        function drawChart() {
 
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Work', 11],
+                ['Eat', 2],
+                ['Commute', 2],
+                ['Watch TV', 2],
+                ['Sleep', 7]
+            ]);
 
-<body>
-    <div class="container">
-        <section id="main" class="mx-auto my-5 py-5 px-3">
-            <h1>5가지 사랑의 언어 테스트 [By: 게리 채프먼]</h1>
-            <h3> Made By KiwiBird </h3>
-            <h9> Inspired By 오리너구리</h9>
+            var options = {
+                title: 'My Daily Activities'
+            };
 
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
-            <!--Before it had col-lg-6 col-md-8 col-sm-10 col-12 in class-->
-            <div class="mx-auto">
-                <img src='./img/main.png' alt="mainImage" class="img-fluid">
-            </div>
-            <p>
-                5가지 사랑의 언어 테스트입니다
-            </p>
-
-            <p>
-                두가지 선택란중 더 자신에게 해당되는것을 골라주세요!
-            </p>
-            <p>
-                정밀한 검사를 위하여 테스트는 3-4분 정도 걸립니    다.
-            </p>
-            <p>
-                아래 시작하기를 눌러주세요!
-            </p>
+            chart.draw(data, options);
+        }
 
 
-            <link rel="icon" href="./favicon.ico" type="image/x-icon">
-            <button type="button" class="btn btn-outline-success mt-3"
-                    onclick="js:begin()">
-                시작하기
-            </button>
-        </section>
-
-        <section id="qna">
-            <div class="status mx-auto mt-5">
-                <div class="statusBar">
-
-                </div>
-
-            </div>
-            <div class="qBox my-5 py-3 mx-auto">
-
-            </div>
-
-            <div class="answerBox">
-
-            </div>
-
-        </section>
-
-        <section id="result" class="mx-auto my-5 py-5 px-3">
-            <h1>당신의 결과는!</h1>
-            <div class="resultname">
+</head >
 
 
-            </div>
+            <body>
+                <div class="container">
+                    <section id="main" class="mx-auto my-5 py-5 px-3">
+                        <h1>5가지 사랑의 언어 테스트 [By: 게리 채프먼]</h1>
+                        <h3> Made By KiwiBird </h3>
+                        <h9> Inspired By 오리너구리</h9>
 
-            <!--Before class we added my-3 col-lg-6 col-md-8 col-sm-10 col-12-->
-            <div id="resultImg" class="mx-auto">
 
-            </div>
-            <div class="resultDesc">
+                        <!--Before it had col-lg-6 col-md-8 col-sm-10 col-12 in class-->
+                        <div class="mx-auto">
+                            <img src='./img/main.png' alt="mainImage" class="img-fluid">
+                        </div>
+                        <p>
+                            5가지 사랑의 언어 테스트입니다
+                        </p>
+
+                        <p>
+                            두가지 선택란중 더 자신에게 해당되는것을 골라주세요!
+                        </p>
+                        <p>
+                            정밀한 검사를 위하여 테스트는 3-4분 정도 걸립니    다.
+                        </p>
+                        <p>
+                            아래 시작하기를 눌러주세요!
+                        </p>
 
 
-            </div>
+                        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+                            <button type="button" class="btn btn-outline-success mt-3"
+                                onclick="js:begin()">
+                                시작하기
+                            </button>
+                    </section>
 
-            <link rel="icon" href="./favicon.ico" type="image/x-icon">
-            <button type="button" class="kakao mt-3 py-2 px-3" onclick="js: setShare()">
-                공유하기
-            </button>
+                    <section id="qna">
+                        <div class="status mx-auto mt-5">
+                            <div class="statusBar">
 
-        </section>
+                            </div>
 
-        <script src="./js/data.js" charset="utf-8"></script>
-        <script src="./js/start.js" charset="utf-8"></script>
-        <script src="./js/share.js" charset="utf-8"></script>
+                        </div>
+                        <div class="qBox my-5 py-3 mx-auto">
+
+                        </div>
+
+                        <div class="answerBox">
+
+                        </div>
+
+                    </section>
+
+                    <section id="result" class="mx-auto my-5 py-5 px-3">
+                        <h1>당신의 결과는!</h1>
+                        <div class="resultname">
+
+
+                        </div>
+
+                        <!--Before class we added my-3 col-lg-6 col-md-8 col-sm-10 col-12-->
+                        <div id="resultImg" class="mx-auto">
+
+                        </div>
+                <div class="resultDesc">
+                    <div id="piechart" style="width: 900px; height: 500px;"></div>
+
+
+                        </div>
+
+                        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+                            <button type="button" class="kakao mt-3 py-2 px-3" onclick="js: setShare()">
+                                공유하기
+                            </button>
+
+                    </section>
+
+                    <script src="./js/data.js" charset="utf-8"></script>
+    <script src="./js/start.js" charset="utf-8"></script>
+    <script src="./js/share.js" charset="utf-8"></script>
 
     </div>
-</body>
+    </body>
