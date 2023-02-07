@@ -1,19 +1,35 @@
+const url = 'https://5lovinglanguages-kr.netlify.app/'; 
 
-function kakaoShare() {
+function setShare() {
+    var resultImg = document.querySelector('#resultImg');
+    var resultAlt = resultImg.firstElementChild.alt;
+
+    const shareTitle = "5가지 사랑의 언어 결과";
+    const shareDes = infoList[resultAlt].name;
+    const shareImage = url + 'img/image-' + resultAlt + '.png';
+    const shareURL = url + 'page.result-' + resultAlt + '.html';
 
     Kakao.Share.sendDefault({
-        objectType: 'text',
+        objectType: 'feed',
         content: {
-            title: shareTitle, 
+            title: shareTitle,
             description: shareDes,
-            imageUrl: shareImage; 
-            }
-        text:
-            '기본 템플릿으로 제공되는 텍스트 템플릿은 텍스트를 최대 200자까지 표시할 수 있습니다.',
-        link: {
-            mobileWebUrl: 'shareURL',
-            webUrl: 'shareURL',
+            imageUrl: shareImage,
+            link: {
+                mobileWebUrl: shareURL,
+                webUrl: shareURL
+            },
         },
+
+        buttons: [
+            {
+                title: '결과 확인하기',
+                link: {
+                    mobileWebUrl: shareURL,
+                    webUrl: shareURL,
+                    },
+                },
+            ]
     });
 
 }

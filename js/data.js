@@ -228,23 +228,23 @@ const qnaList = [
 
 const infoList = [
     {
-        name: 'a',
-        desc: 'a'
+        name: '5가지 사랑의 언어 A타입',
+        desc: 'A'
   },
   {
-      name: 'b',
-      desc: 'b'
+      name: '5가지 사랑의 언어 B타입',
+      desc: 'B'
   },
   {
-      name: 'c',
-      desc: 'c'
+      name: '5가지 사랑의 언어 C타입',
+      desc: 'C'
   },
   {
-      name: 'd',
-      desc: 'd'
+      name: '5가지 사랑의 언어 D타입',
+      desc: 'D'
   },
   {
-      name: 'e',
-      desc: 'e'
+      name: '5가지 사랑의 언어 E타입',
+      desc: 'E'
   },
 ]
