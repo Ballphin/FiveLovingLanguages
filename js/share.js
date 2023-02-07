@@ -4,7 +4,7 @@ function setShare() {
     var resultImg = document.querySelector('#resultImg');
     var resultAlt = resultImg.firstElementChild.alt;
 
-    const shareTitle = "5가지 사랑의 언어 결과";
+    const shareTitle = "이이잉버그";
     const shareDes = infoList[resultAlt].name;
     const shareImage = url + 'img/image-' + resultAlt + '.png';
     const shareURL = url + 'page/result-' + resultAlt + '.html';
@@ -23,7 +23,7 @@ function setShare() {
 
         buttons: [
             {
-                title: '결과 확인하기',
+                title: '1234',
                 link: {
                     mobileWebUrl: shareURL,
                     webUrl: shareURL,
