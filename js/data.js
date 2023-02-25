@@ -256,7 +256,7 @@ console.log("It works until here"),
 var otherList = [
     {
         console.log("It works until here"), 
-        desc: val1 
+        desc: "A" 
     },
     {
         desc: 'B'
