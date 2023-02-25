@@ -3,8 +3,8 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
-const endPoint = 4;
-const select = [0,0,0,0,0 ]; 
+const endPoint = 30;
+const select = [0, 0, 0, 0, 0];
 
 
 function calResult() {
@@ -27,7 +27,8 @@ function setResult(){
     imgDiv.appendChild(resultImg); 
 
     const resultDesc = document.querySelector('.resultDesc');
-    resultDesc.innerHTML = infoList[point].desc; 
+    resultDesc.innerHTML = otherList[point].desc;
+    console.log(resultDesc); 
 }
 
 
@@ -93,9 +94,11 @@ function goNext(qIdx) {
         return; 
     }
 
+    console.log("IT Works until HERE 22222!!")
 
     var q = document.querySelector('.qBox');
     q.innerHTML = qnaList[qIdx].q;
+    console.log("IT Works until HERE 333!!")
 
     for (let i in qnaList[qIdx].a) {
         addAnswer(qnaList[qIdx].a[i].answer, qIdx, i); 
@@ -120,6 +123,7 @@ function begin() {
 
         }, 450)
         let qIdx = 0;
+        console.log("IT Works until HERE!!")
         goNext(qIdx); 
     }, 450);
 }

@@ -12,6 +12,7 @@
 */
 
 
+
 const qnaList = [
   {
     q: '1. 첫번째 질문',
@@ -226,10 +227,10 @@ const qnaList = [
     },
 ]
 
-const infoList = [
+var infoList = [
     {
         name: '5가지 사랑의 언어 A타입',
-        desc: 'A'
+        desc: "A"
   },
   {
       name: '5가지 사랑의 언어 B타입',
@@ -248,3 +249,26 @@ const infoList = [
       desc: 'E'
   },
 ]
+
+const val1 = select.toString(); 
+console.log("It works until here"), 
+
+var otherList = [
+    {
+        console.log("It works until here"), 
+        desc: val1 
+    },
+    {
+        desc: 'B'
+    },
+    {
+        desc: 'C'
+    },
+    {
+        desc: 'D'
+    },
+    {
+        desc: 'E'
+    },
+]
+
