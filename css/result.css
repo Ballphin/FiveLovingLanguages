@@ -60,7 +60,7 @@
 
 #barchart_values {
     max-width: 500px; /* set a max width for the chart container */
+    width: 100%;
     height: 400px; /* set the height of the chart container */
-    margin-top: 50px; /* add some space between the chart and other elements */
 }
 
