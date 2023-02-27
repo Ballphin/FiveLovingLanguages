@@ -3,15 +3,15 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
-const endPoint = 3;
+const endPoint = 30;
 const select = [0, 0, 0, 0, 0];
 
 var ans = [
     ["인정하는말", 0, "#ffe480"],
     ["함께하는 시간", 0, "#8e80c5"],
     ["선물", 0, "#b7ff90"],
-    ["봉사", 0, "#d3fbde"],
-    ["스킨십", 0, "#f9bfdd"]
+    ["봉사", 0, "#a0b0ff"],
+    ["스킨십", 0, "#fde2e1"]
 ]; 
 
 
