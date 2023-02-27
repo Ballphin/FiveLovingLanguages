@@ -51,16 +51,9 @@
 
 
 
-/*#barchart_values {
-    margin: 0 auto;*/ /* center horizontally */
-    /*text-align: center;*/ /* center vertically */
-    /*width: 80%;*/ /* set the width of the container */
-    /*height: 80%;*/ /* set the height of the container */
-/*}*/
-
-/*#barchart_values {
-    width: 80%;
-    height: 80%;
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
-
-*/
