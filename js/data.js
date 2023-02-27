@@ -249,26 +249,3 @@ var infoList = [
       desc: 'E'
   },
 ]
-
-const val1 = select.toString(); 
-console.log("It works until here"), 
-
-var otherList = [
-    {
-        console.log("It works until here"), 
-        desc: "A" 
-    },
-    {
-        desc: 'B'
-    },
-    {
-        desc: 'C'
-    },
-    {
-        desc: 'D'
-    },
-    {
-        desc: 'E'
-    },
-]
-

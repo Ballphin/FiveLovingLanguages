@@ -3,15 +3,51 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
-const endPoint = 30;
+const endPoint = 3;
 const select = [0, 0, 0, 0, 0];
+
+var ans = [
+    ["인정하는말", 0, "grey"],
+    ["함께하는 시간", 0, "red"],
+    ["선물", 0, "yellow"],
+    ["봉사", 0, "blue"],
+    ["스킨십", 0, "purple"]
+]; 
+
+
+function addData(newData) {
+    // Loop through the array of new data points
+    for (var i = 0; i < newData.length; i++) {
+        // Extract the element name, density, and color for the current data point
+        var elementName = newData[i][0];
+        var density = parseFloat(newData[i][1]);
+        var color = newData[i][2];
+
+        // Add the new data point to the existing data array
+        data.addRow([elementName, density, color]);
+    }
+
+    // Redraw the chart with the updated data
+    chart.draw(view, options);
+}
+
+function selectToDoubleArray() {
+    for (var i = 0; i < select.length; i++) {
+        ans[i][1] = select[i]; 
+    }
+}
+
 
 
 function calResult() {
     console.log(select);
+    selectToDoubleArray(); 
+    addData(ans);
+    console.log("Data Added?")
     var result = select.indexOf(Math.max(...select));
     return result; 
 }
+
 
 function setResult(){
     let point = calResult();
@@ -27,7 +63,7 @@ function setResult(){
     imgDiv.appendChild(resultImg); 
 
     const resultDesc = document.querySelector('.resultDesc');
-    resultDesc.innerHTML = otherList[point].desc;
+    resultDesc.innerHTML = infoList[point].desc;
     console.log(resultDesc); 
 }
 
