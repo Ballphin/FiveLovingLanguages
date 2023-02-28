@@ -3,7 +3,7 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
-const endPoint = 30;
+const endPoint = 2;
 const select = [0, 0, 0, 0, 0];
 
 var ans = [
